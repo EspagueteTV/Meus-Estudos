@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+    <head>
+        <title>Bootstrap</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Inserção do Bootstrap versão 4 -->
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <!-- Fim insercão Bootstrap Versão 4-->
+        <!-- Javascript do site-->
+        <script src="js/site.js"></script>
+        <!-- css do site-->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Text&display=swap" rel="stylesheet">
+    </head>
+
+    <body>     <!-- esconder wrapper ;sidebar= barra lateral-->                                                                       <!-- div= container espaço nos cantos-->
+        <div id="wrapper">
+          <!-- Inicio do menu-->
+            <div id="sidebar-wrapper">    <!--Menu lateral-->
+                <ul class="sidebar-nav">
+                    <center> <img src="imagem/ILTQq.png" class="logo" height="50px"/> </center>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="pagina1.html">Menu 2</a></li>
+                    <li><a href="pagina2.html">Item 2</a></li>
+                    <li><a href="pagina3.html">ITEM 3</a></li>
+                </ul>
+            </div>
+          <!-- FIm do Menu-->
+
+            <div id="page-content-wrapper">   
+                <!--Corpo do site -->
+                <div class="container-fluid">   <!-- toggle chamar ele mesmo necesita ter um id-->
+                    <a href="#menu-toggle" class="btn btn-outline-dark" id="menu-toggle"> X </a>
+                </div>
+
+
+
+                <!-- Fim do corpo do site-->
+            </div>
+        </div>
+
+    </body>
+</html>

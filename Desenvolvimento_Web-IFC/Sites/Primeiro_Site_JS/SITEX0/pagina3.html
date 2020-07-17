@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+    <head>
+        <title>Bootstrap</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Inserção do Bootstrap versão 4 -->
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <!-- Fim insercão Bootstrap Versão 4-->
+        <!-- Javascript do site-->
+        <script src="js/site.js"></script>
+        <!-- css do site-->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Text&display=swap" rel="stylesheet">
+    </head>
+
+    <body> 
+            <div>
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark " >                                   <!-- Barra de Navegação      navbar que vai ocupar toda barra-->
+                      
+                      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu">                   <!-- Botao no HTML 5 target= marcar/rotulo || toggler: mostra -->
+                        <span class="navbar-toggler-icon"> </span>
+            
+                        
+                      </button>
+            
+            
+                      <div id="menu" class="collapse navbar-collapse  ">                                                  <!-- collapse: esconder   2ª parte quando a tela for menor esconde o menu -->
+                            <div class="navbar-nav" class="nav .justify-content-center">                                                                <!-- Onde vai os itens de navegação -->
+                              <a class="nav-item nav-link " href="index.html" > HOME   </a>
+                              <a class="nav-item nav-link" href="pagina1.html" > Menu2 </a>
+                              <a class="nav-item nav-link" href="pagina2.html" > ITEM 2 </a>
+                              <a class="nav-item nav-link active" href="pagina3.html" > ITEM 3 </a>
+                        </div>
+                      </div>
+                    </nav>
+                  </div>
+        
+                  <div class="container">
+
+                      <br/>
+                    <form>
+
+                        <label for="nome"> Nome:    </label>
+                        <input class="form-control" id="nome" type="text" placeholder="Digite seu nome" required autofocus>  
+
+                        <br>
+
+                        <label for="email"> Email:  </label> 
+                        <input type="email" id="email" class="form-control" placeholder="Digite seu email" > <!-- autofocus: onde o cursor vai estar    placeholder: o que vai mostrar na tela antes do ususario digitar-->
+
+                        <br>
+
+                            <label for="numero"> Número: </label>
+                            <input type="number" id="numero" class="form-control" min="18" max="100" step="2">  <!-- Stap quantas vezes vai aumentar-->
+
+                        <br>
+
+                            <label for="url" > URL</label>
+                            <input type="url" id="url" class="form-control"placeholder="Informe uma URL válida ">
+
+                        <br>
+                            <label for="range"> Range </label>
+                            <input type="range" id="range" class="form-control" min="0" max="10" value="5">
+
+                        <br>
+
+                            <label for="data"> Data:</label>
+                            <input type="date" id="data" class="form-control">
+
+                        <br>
+
+                            <label for="cor"> Cor: </label>
+                            <input type="color" id="cor" class="form-control">
+
+                        <br>
+
+                            <label for="sexo"> Sexo: </label>
+                            <br>
+                            <input type="radio" name="sexo" value="Masculino">  Masculino
+                            <input type="radio" name="sexo" value="Feminino">   Feminino
+
+                        <br>
+                            <label for="frutas"> Frutas: </label>
+                            <br>
+                            <select name="frutas" class="form-control">                 
+                                <option value="Banana"> Banana </option>                                <!--droppdown list  comodox-->
+                                <option value="Maca"> Maçã </option>
+                                <option value="Laranja"> Laranja </option>
+
+                            </select>
+
+                        <br>
+                        <br>
+                            <label for="arquivo"> Arquivo: </label>
+                            <input type="file" class="form-control-file" id="arquivo">
+                        <br>
+                            <label for="senha"> Senha </label>
+                            <input type="password" class="form-control" id="senha" readonly>    <!-- readonly: não consegue mais sem editado -->
+                        <br>
+                        <br>
+                            <label> É casado? </label>
+                            <input type="checkbox" id="Resp" value="sim">
+                            <label for="Resp"> Sim</label>
+                            <input type="checkbox" id="Resp" value="nao">
+                            <label for="Resp"> Não</label>
+                            <input type="checkbox" id="Resp" value="outro">
+                            <label for="Resp"> Não te Interessa</label>
+                            <label for="Resp"> Sim</label>
+                        <br>
+                        <br>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown"> Legumes</button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#"> Abobrinha </a>
+                                    <a class="dropdown-item" href="#"> Brócolis </a>
+                                </div>
+                            </div>
+                            
+                            
+                            
+
+
+
+                        <br>
+                        <br>
+                            <input class="btn btn-primary" type="submit" value="Enviar">        <!--Botão de seleção-->
+
+                      </form>
+
+
+                    </div>
+
+
+    </body>
+</html>

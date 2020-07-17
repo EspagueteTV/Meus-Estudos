@@ -1,0 +1,176 @@
+body, html 
+{
+    margin: 0;
+    padding: 0;
+}
+.container 
+{
+    margin: 0 auto;                                 /* Margem externa */
+    max-width: 940px;                               /* Tamanho máximo da largura */
+    padding: 0 10px;                                /* Margem interna */
+}
+.header 
+{
+    background: 
+    url(/images/bg.jpg) no-repeat center center ;   /* Pode colocar todo o background em uma só linha */
+    background-repeat: no-repeat;                   /* Repetir */
+    background-position: center center;             /* Posição da imagem */
+    background-size: cover;                         /* Tamanho da imagem  de plano de fundo */
+    height: 800px;                                  /* Altura */
+    text-align: center                              /* Alinhamento do texto */         
+}
+.header h1
+{
+    color: #FFF;                                  /* Cor da fonte */
+    line-height: 100px;                             /* Altura da linha */
+    font-size: 80px;                                /* Tamanho da fonte */
+    margin-top: 0;  
+    margin-bottom: 80px;
+    text-transform: uppercase;                      /* Deixar o texto em maiusculo */
+    text-shadow: 2px -2px 5px #45AEFF;            /* horizontal vertical blur cor */ 
+    font-family: 'Bitter', serif;  
+    transition: font-size .2s;
+}
+.header h1:hover 
+{
+    font-size: 100px /* tamnho da fonte */
+}
+.header .container 
+{
+    position: relative;
+    top: 200px;                                     /* Definição de posição, precisa ser definida uma posição para este elemento  */
+}
+.header p 
+{
+    color: #FFF;                                  /*cor da letra */
+    font-weight: 500;                               /*espessura da letra */
+    letter-spacing: 8px;                            /*distancia das letras */
+    margin-top: 0;
+    margin-bottom: 40px; 
+    text-transform: uppercase;
+}
+.btn 
+{
+    color: #FFF;
+    background: #000;
+    padding: 10px 40px;
+    text-decoration: none;                          /* remove as decorações dos links */
+    transition: background .5s
+}
+.btn:hover                                          /* cursor sobre o elemento da classe btn */
+{
+    background: #117bff;
+            cursor: pointer;                                    /* tipo de cursor */
+}
+.nav
+{
+    background: #000;
+    height: 80px; /* Altura da barra de Navegação */
+    width: 100%; /* Largura da barra de Navegação */
+}
+
+.nav ul 
+{
+    background: #000;
+    height: 80px;
+    list-style: none;   /* Ocultar o estilo da lista */
+    margin: 0 auto;
+    padding: 0;
+}
+.nav ul li 
+{
+    color: #FFF;
+    background-color: #000;
+    list-style: none;           /* Remove o estilo na frente do item  */
+    display: inline-block;      /* Aprezenta os itens em formato de linha */
+    height: 80px;
+    line-height: 80px;
+    padding: 0 10px;
+    transition: background .5s;
+}
+.nav ul li:hover
+{
+    background: #117bff;
+    cursor: pointer;
+    
+}
+a   /* Estilos para todos os links */
+{
+    text-decoration: none;
+    color: #FFF;
+    display: inline-block;
+}
+a:visited       /* Estilo para Links Visitados */
+{
+    color: aqua;
+}
+
+.main{
+    /* background: #117bff */
+
+}
+.main .container{
+    /* background: #45AEFF; */
+    margin: 80px auto;
+}
+.main img 
+{
+    margin: 10px 80px 50px 0px ;    
+    height: 178px;
+    width: 196px; 
+    border-radius: 45% 0px 0px 45% ;  /* canto superior esquerdo // canto superior direito // canto inferior direito // canto inferior esquerdo */
+    border-radius: 55%;                  /* Arredondamento */
+    float: left; 
+    transition: border-radius 2s;
+}
+.jumbotron 
+{
+    background:
+    url(/images/jumbotron_bg.jpg) center center;
+    background-size: cover;
+    height: 600px;
+    /* box-shadow: 0px -35px 25px #117bff; */
+    opacity: 1;
+
+}
+.jumbotron .container
+{
+    position: relative;
+    top: 220px;
+}
+.jumbotron h2 
+{
+    color: #FFF;
+    text-align: right;
+
+}
+.jumbotron p
+{
+    color: #FFF;
+    text-align: right;
+}
+.jumbotron .btn
+{
+    margin: 10px 0px 0px;
+    float: right;
+    transform: rotate(20deg);
+       /* Rotacionar o elemento */
+}
+.footer                 /* rodpe*/
+{
+    background: #000;
+    height: 80px;
+    padding-bottom: 50px;   
+    /* position: fixed;             Deixa fixo o elemento na tela 
+    bottom: 0px;                    Posição onde sera fixado
+    width: 100%; */
+}
+.footer p
+{
+    color: #FFF;
+    font-size: 14px;
+    height: 80px;
+    line-height: 80px;
+    margin: 0;
+
+}

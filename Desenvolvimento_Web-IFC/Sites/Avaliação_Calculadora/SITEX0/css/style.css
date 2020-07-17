@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #bdcfcf;
+}
+.container{
+    position: relative;
+    top: 200px;
+}
+.bloco3
+{
+    background: #2b0dd1;
+    margin-top: 20px;
+    width: 300px;
+    text-align: center;
+    color: #fff;
+    font-weight: bolder;
+    border-radius: 5px 50px 5px 50px;
+
+}
+.bloco2
+{
+    background-color: #0F0;
+    margin-top: 20px;
+    width: 300px;
+    border-radius: 100%;
+    text-align: center;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.bloco4 {
+    background: #fae900;
+    text-align: center;
+    color: #fff;
+    font-weight: bolder;
+
+}
+
+.form-control
+{
+    height: 200px;
+    width: 85%;
+}
+
+hr{
+    background-color: #635c5c;
+    width: 75%;
+}
+

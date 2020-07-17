@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+  <title>Bootstrap</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Inserção do Bootstrap versão 4 -->
+  <link rel="icon" href="imagem/icone_navegador.jpg" /> 
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <!-- Fim insercão Bootstrap Versão 4-->
+  <!-- Javascript do site-->
+  <script src="js/site.js"></script>
+  <!-- css do site-->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pagina_padrao.css">
+
+</head>
+<body>
+
+    <nav class="navbar navbar-fixed-top navbar-expand-md navbar-dark bg-dark " >                                   <!-- Barra de Navegação      navbar que vai ocupar toda barra-->
+      <div class="container">
+        <a class="navbar-brand h1 mb-0" href="#">Siqueira Websites</a>  <!-- mb margem botton-->
+
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu">                   <!-- Botao no HTML 5 target= marcar/rotulo || toggler: mostra -->
+              <span class="navbar-toggler-icon"> </span>
+            </button>
+
+            <div id="menu" class="collapse navbar-collapse  ">                                                  <!-- collapse: esconder   2ª parte quando a tela for menor esconde o menu -->
+              <div class="navbar-nav mr-auto">        <!--   ml-auto margem right -->                                                    <!-- Onde vai os itens de navegação -->
+                  <a class="nav-item nav-link " href="index.html">HOME</a>
+                  <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop"> HISTÓRIA</a>
+                      <div class="dropdown-menu"> <!-- Itens que vao ser chamados ao ser clicado neste link-->
+                        <a class="dropdown-item" href="pagina1.html"> A Geração Zero</a>
+                        <a class="dropdown-item" href="pagina2.html"> A Primeira Geração</a>
+                        <a class="dropdown-item" href="pagina3.html"> A Segunda Geração</a>
+                        <a class="dropdown-item" href="pagina4.html"> A Terceira Geração</a>
+                        <a class="dropdown-item" href="pagina5.html"> A Quarta Geração</a>
+                    </div>  
+                  </div> 
+                  <a class="nav-item nav-link active" href="pagina6.html">SOBRE O AUTOR</a>
+              </div>
+  
+            </div>
+
+      </div>
+    </nav>
+
+  <section class="content-site">
+    <div class="container">
+        
+      <!-- Primeiras formas de contar -->
+
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+          <h1>Sobre o Autor</h1>
+          <figure>
+              <img class="retrato" src="imagem/autor.jpg" alt="Fotografia de Gabriel Siqueira">
+              <figcaption> Fonte: Gabriel Siquira (2019) </figcaption>
+            </figure>
+            <p>O estudante do Instituto Federal Catarinense Gabriel Siqueira desenvolveu o  site “Siqueira Websites” com objetivo de realizar a finalização da matéria de Desenvolvimento Web realizados no 1º Ano do Ensino Médio no curso Técnico Integrado em Informática no <i>campus</i> IFC  São Bento do Sul. </p>
+            <p>Para ser desenvolvido o Site, foram utilizado os seguintes conceitos :</p>
+            <ul class="list-group">
+                <li class="list-group-item"><b>HTML</b> (Hypertext Markup Language) é utilizada unicamente para estruturar o conteúdo da página</li>
+                <li class="list-group-item"><b>CSS</b> (Cascading Style Sheets) é uma “folha de estilo” composta por “camadas” e utilizada para definir a apresentação (aparência) em páginas da Internet.</li>
+                <li class="list-group-item"><b>Bootstrap</b> é um  framework front-end desenvolvido para dar um plus na programação de sites mobile (responsivos), evitando que seja necessário digitar uma linha CSS para que tudo funcione</li>
+              </ul> 
+
+              <p>A seguir todas as referências bibliográficas utilizadas no decorrer do site:</p>
+
+              <hr>
+
+              <h1>Geração Zero </h1>
+                <p>
+                    ALVES, Leonardo. Charles Babbage. 2019. Disponível em: <https://www.flickr.com/photos/164926180@N04/32551721397/in/photolist-RAu5FP-c2Jmo3-c2Jied-c2HNu7-d78wGq-pAJGv-c2JbDf-7bkgQm-hXXoDf-7bgNv6-mBLRM1-23CbDW7-agNNkR-bNRH6n-pxUDyz-7NLzQM-W9z4do-ifXqaC-ijD5mb-9ai6iR-6Gfhfx-5wmnu3-eDYwXF-TvK8Hb-C9KnM5-dA7kxQ-2hbh8K3-YrBrF4-aSX5JX-phk6s2-9ai658-6HSDNx-HADWAY-68ZXiU-2DGSQn-UJNzgf-51oEJr-baHFJ6-7z2L1L-9ai5un-eUc91S-33z2B4-9ai6Bp-9amdQm-bbSHbz-iV9DQp-71h5jR-6MLKhJ-ncoEJt-Efohh>. Acesso em: 23 nov. 2019. 
+                    <br/><br/>AMANDA@SCOTCLANS. John Napier. 2010. Disponível em: <https://www.flickr.com/photos/31711899@N08/4718315377/in/photolist-7HFmq6-7HKhcu-7HKhch-7HFmpR-hjvmjP-8bWAM8-2hGWYGv-2aopwqE-xNy8Eb-UuafKG-dTk3C8-i5e3gc-7HKhc1-2ax2k9T-29iRrT-86KnA8-7HKhbQ-a9wwsw-7HKhcN-omb9L1-dVZ3MY-C8tNbN-aBWPPg-7HFmqt-CHU6aJ-2gnVam1-2hMZKKA-5Adove-2ezUCMH-2gnUMQj-23CTi4g-2fojB3o-SmmJ4y-2e56RqB-4udrAj-7KgGN2-2dm2xaK-CrjLx3-T7hJ2v-qDrPcq-2fykavt-qCfZKN-akh9TZ-rArntH-2hg3z4r-8XWGxw-7ApwZ5-7KgGQ2-CbLJ-yEVqUo>. Acesso em: 23 nov. 2019.
+                    <br/><br/>ANGELICAARIASPRADA. Howard_aiken. 2010. Disponível em: <https://www.flickr.com/photos/54692441@N06/5149680530/in/photolist-bppEyZ-8R5BeX-qbn1cM-8bBwVC-spatKD-jzngwo-5JKsX6-bs3QPm-sFD6Py-BH7nJX-8R4sBm-6TGuAS-5QtR9J-pmoN76-ktmMPf-vHPhnX-5Xwfxz-3cFaCC-7C8At4-2a9A4-2bvEXmc-pMNYH6-ac8wrQ-tkJqMy-tDkxZv-4Bid9k-odckzE-dbg8xG-dbhqtQ-of1BxR-oyeq8D-tBcubs-db9hXA-db9ffV-tkHTaq-ac8xHo-4716rf-t4qKmY-3iW3Dk-spaWMp-ac8ynd-ac5GyB-dPxjdx-odd96z-xbsZbJ-hKRv1B-ac5GoD-ac8yms-ac5GwR>. Acesso em: 23 nov. 2019.
+                    <br/><br/>ASAIASAI08. Clifford Berry. 2008. Disponível em: <https://www.flickr.com/photos/24860317@N02/2421646498/in/photolist-4FZz8Q-3WrJYW-Xpja9s-MNHVPG-59GocL-3bjG99-3uLSfp-Egq3EF-9gto34-rouNai-rrpYSL-sofFCm-sonY6r-sofG2s-bjQhSQ-sonXPV-9Vhbjj-bjQi9S-DqBZNP-jP56C3-b8Zn3X-bs3QPm-Q2isVT-owu6uC-s6QVAy-qwGzAJ-rrBcUV-sofFRY-s6XKhH-s55ZMF-5XAg43-nCN6Kc-RkK3EA-2cmfNoL-ouE6rU-s6XLL4-s6PHaw-soqcv2-s6QWm1-sm8bGf-rrBeTK-sonX9g-soqcAc-s6QW8W-sm8bXf-sonXVX-s6PJGQ-s6XL6M-s55ZZ4-s6QVHN>. Acesso em: 23 nov. 2019.
+                    <br/><br/> BIORRITMO. O Primeiro Bug em um Computador da IBM. 2017. Disponível em: <http://profjabiorritmo.blogspot.com/2017/06/o-primeiro-bug-em-um-computador-da-ibm.html>. Acesso em: 23 nov. 2019. 
+                    <br/><br/>COLLEGE, Vassar. Grace Murray Hopper. 2010. Disponível em: <https://www.flickr.com/photos/vassararchive/4724357983/in/photolist-8ctz2Z-3HiKoc-wgbAE-6r5DGb-dAjWHJ-6X8sXp-5CujDN-ALrwz-6by1V4-6P7t5N-dUd5Ku-7Pk7cM-cexrpw-5nj4LU-GZpCa-2g4CBfH-4BYmRC-KDi1P-7WUZpv-2AgZcQ-fJJX8d-6u78tZ-8CB3XR-ancRWe-8vP6oR-aSPjfD-bCMXtc-jAgTgH-KqcCQG-4BU6En-rgcKez-4p1JAL-65fDRu-ikhW5-apXtLw-2BbZVD-8ctBdR-FxXMgk-6FCaAW-2BgrBb-4cUVxz-gmrhYV-78KBJK-78KC2g-bpT1Eb-bCMRme-bpT1wm-bpSUyS-bCMRrB-bpSUs9>. Acesso em: 23 nov. 2019. 
+                    <br/><br/>DOUGLASKELVIN. A evolução dos computadores e dos jogos digitais. 2019. Disponível em: <https://www.timetoast.com/timelines/a-evolucao-dos-computadores-e-dos-jogos-digitais>. Acesso em: 23 nov. 2019.
+                    <br/><br/>DUQUE, Beatriz. Ossos de Napier. 2019. Disponível em: <https://www.flickr.com/photos/147494408@N05/47524757581/in/photolist-2fpANG6>. Acesso em: 23 nov. 2019.
+                    <br/><br/>GOMEZ, Jose Luis Silva. Herman Hollerith. 2015. Disponível em: <https://www.flickr.com/photos/135814597@N06/21122440781/in/photolist-ybw2Kt-dytQaP-4noP7d-5XAtU1-bgxUkV-5Xw2D4-Tgomn9-2bvEX1n-KeoJho-xdXvMD-YyCohy-Pm4epW-4HYDqF-arwXEn-68W386-CH4r5G-bnxhLX-DSQPr8-P9fxdB-bnxhwn-4xB9uN-9s2jJ7-ostA55-pu5zvc-6RfUT8-pu5GTi-76e7Ti-arzzvu-XgMcXJ-CuWx4S-pHEsYv-bnxhmc-dN7nHH-6rBPTe-4Eu1K4-4Q9e14-akxhX2-6tD5Qt-94A2jU-CQnJEw-6rBPpi-ps3xTm-4Q9dZR-pczNAj-HtVZD-buKfHo-2YB7j3-2aHHPz9-9VC2Zr-LqsCe3>. Acesso em: 23 nov. 2019.
+                    <br/><br/>HAHN, Donna. 1950 – Slide Rule. 2015. Disponível em: <https://www.flickr.com/photos/133948605@N03/18844248522/in/photolist-78kAZC-ouoz86-eafv84-eafvae-eafpLe-eafv8V-eazqYS-2dTuiun-rhNSet-bzpWmw-Jps2jQ-Ci8LyQ-auHVPt-uHcGyA-pRzaGh-2ebM27A-29kShbv-73qyAv-73gXUE-2dkUeqF-kc3isr-6NFd7j-eamepC-eafpMi-eafvbe-eazvqW-e9WmWB-eeAfG9-e9WmYv-e9WmXr-eeu7Lz-eezV9S-eeA98L-eazvrE-eezEqY-eezEso-eeA9aq-eeA9b5-eeu7Kc-eeA99S-eamesb-eamerL-J8L8Pm-Jpq48y-eafhyp-eeu7MH-JAmCdn-Jps2km/>. Acesso em: 23 nov. 2019.
+                    <br/> <br/>JASMINABONITA. Pascalina. 2010. Disponível em: <https://www.flickr.com/photos/56185412@N02/5197731549/in/photolist-8ViJvc-a76nkW-5MaMw2-8kRP6u-51ikQ1-6Rf2Sz-dVhb7u-614Jgx-cRzssu-LuHH6k-L4gCnj-9pTVeX-8VmN4o-2athLCs-qcUiui-8Ejx67-69ttjd-dVooqG-onXs9w-L4gCBN-vKiMeW-LrGv45-LuHHzM-LrGvuL-8kNBRF-cBa7hW-ryyKUw-dV5v3K-5gbPHU-6hBcNf-6hBczf-6hBcXj-npS1am-5KXuj5-6hBd5h-Pu8YDu-dKWxU9-g8uTcW-muzDdh-4y35hD-QkmF4d-se8rPp-9emeaR-a1CZ8x-7zdige-PibD78-bZ5yTW-2fd1cmw-PAXGH-bC3AAN>. Acesso em: 23 nov. 2019.
+                    <br/><br/>LHWILKINSON. 545px-Joseph_Marie_Jacquard. 2011. Disponível em: <https://www.flickr.com/photos/26676383@N00/5906888678/in/photolist-9ZYmdf-5LCFhY-24i3Att-CbHsbC-Phn947-rh9aFi-VNuwQ3-VNuAcd-VRJJpD-2eEhdyR-dNdvmW-6Rh35p-BDipTX-BAZZEU-BjsFKw-BLAVPB-AP56hA-BDiu3Z-AP4RFC-BJhAWL-BJhNAN-Bd5m4g-APb1Sa-pu5zvc-BjsZ49-BLAT22-Bd5MMR-APaY8H-BLAe86-9d74m4-iW4hVm-2aVjXpn-4P5NuW-vwb2LM-ca72Zh-iW3vqn-7WvY7X-Bd5dKP-AP5ehJ-Bd5x7D-Bd5ufX-Bjt1xG-Bd5Uhe-BDiYfa-BB1BSU-BB1w7W-BJhGXU-BDinak-6RkwNh-2gtoHEA>. Acesso em: 23 nov. 2019.
+                    <br/><br/>KOB42KOB. Konrad Zuse. 2004. Disponível em: <https://www.flickr.com/photos/kob42kob/287711096/in/photolist-rqAu9-ULNkKS-6AgJFh-5m8k6X-bjjFTg-S5NYup-bjjAH4-zgs7h-pbauj4-4vfHK1-Ln8aLN-9k2Wdp-nXjrW-4y2nfu-5RJE12-bjjF4k-b8xkCH-54sLgp-2bDxbn-b8xmgv-bjjDHg-bjjGup-b8xkWz-bjjEMD-bjjCFF-bjjssV-2axeSjd-a5zPor-dM1yX-dM1rL-pqEoSs-8BUoBr-7eE8Pf-oXVHz5-bjjyUK-bjjBFT-b8xkNk-8QQEE3-SFMTGq-5m8k6V-5mYM5P-5jmaMx-nXqhp3-4vbAdx-xaLt8Y-axKKUa-jReYLz-dhhxZh-VLfjJx-69zZJP>. Acesso em: 23 nov. 2019.
+                    <br/><br/>KOMMUN, Skara. Godofredus Guilielmus Leibnitz. 2011. Disponível em: <https://www.flickr.com/photos/63794459@N07/6194234027/in/photolist-aqWegZ-az8qmV-arn4Yp-arpGS7-bWNNSv-uwSsNS-25mRAGb>. Acesso em: 23 nov. 2019.
+                    <br/><br/>MEAÑOS, Mila Torrado. Diferencial maquina. 2016. Disponível em: <https://www.flickr.com/photos/149442699@N08/31183559606/in/photolist-cnWUmG-cnWRU1-99FAGW-cnWSsj-3yWb1B-PvzTRq-8JLWmt-RAuvhH-4LJCCm-XEFhRL-9VvNex-9VyCgo-a33H75-9LQMDr-2ebsRL7-8JkRqH-2gWrw9F-dt14L6-hnZeJj-8UTvk4-77hQcU-NdJDQj-8UXXEy-77hQ7q-LcDQX1-y2nrAM>. Acesso em: 23 nov. 2019.
+                    <br/><br/>MODIEGC. 220px-Wenceslas_Hollar_-_William_Oughtred. 2016. Disponível em: <https://www.flickr.com/photos/13672981@N07/23822739784/in/photolist-78kAZC-ouoz86-eafv84-eafvae-eafpLe-eafv8V-eazqYS-2dTuiun-rhNSet-bzpWmw-Jps2jQ-Ci8LyQ-auHVPt-uHcGyA-pRzaGh-2ebM27A-29kShbv-73qyAv-73gXUE-2dkUeqF-kc3isr-6NFd7j-eamepC-eafpMi-eafvbe-eazvqW-e9WmWB-eeAfG9-e9WmYv-e9WmXr-eeu7Lz-eezV9S-eeA98L-eazvrE-eezEqY-eezEso-eeA9aq-eeA9b5-eeu7Kc-eeA99S-eamesb-eamerL-J8L8Pm-Jpq48y-eafhyp-eeu7MH-JAmCdn-Jps2km>. Acesso em: 23 nov. 2019.
+                    <br/> <br/>PATRICK. Babbage (1834) - Maquina Analítica. 2009. Disponível em: <http://labarqcomp.blogspot.com/2009/03/primeiro-post-so-pra-ver-como-fica.html>. Acesso em: 23 nov. 2019.
+                    <br/><br/>VERA, Agustin. Ábaco. 2013. Disponível em: <https://www.flickr.com/photos/agustin_vera/8633321780/in/photolist-e9U2Mw-c2mytw-c2myrs-c2myoh-c2myjW-BGPooh-c8yWj5-8SvtEc-c8yYRS-c8z1T7-c8yWo3-c8yVif-64GvSj-c8z4Gq-EZk4m2-c8yWww-c8z3K7-c8yYPb-c8yUKL-c8z5eG-c8yYtq-c8z3GJ-c8z6fs-c8z5bG-c8yXvC-c8ySxJ-c8yRRJ-c8yXBs-c8yVFL-c8z399-c8z2pE-c8z1V3-c8z1gs-c8yRis-c8z4Pj-c8yXKs-c8yWuh-aB8utk-c8z5kf-c8yX3J-c8z5sj-5uSt1Q-c8ySUE-c8ySM5-c8z5uj-c8z4S3-c8z3pd-c8yUVu-c8z6jd-c8z5Zo>. Acesso em: 23 nov. 2019.
+                    <br/><br/> WIKIMEDIA. File:Rechenmaschine von Leibniz (Nachbau) 09.jpg. 2019. Disponível em: <https://commons.wikimedia.org/wiki/File:Rechenmaschine_von_Leibniz_(Nachbau)_09.jpg>. Acesso em: 23 nov. 2019. 
+                    <br/><br/>WIKIPÉDIA. Ada Lovelace. 2019. Disponível em: <https://pt.wikipedia.org/wiki/Ada_Lovelace>. Acesso em: 23 nov. 2019.
+                    <br/><br/> WIKIPEDIA. Atanasoff–Berry Computer. 2019. Disponível em: <https://pt.wikipedia.org/wiki/Atanasoff%E2%80%93Berry_Computer>. Acesso em: 23 nov. 2019.
+                    <br/><br/>WIKIPÉDIA. Blaise Pascal. 2019. Disponível em: <https://pt.wikipedia.org/wiki/Blaise_Pascal>. Acesso em: 23 nov. 2019.
+                    <br/><br/> WIKIPÉDIA. Harvard Mark I. 2019. Disponível em: <https://en.wikipedia.org/wiki/Harvard_Mark_I>. Acesso em: 23 nov. 2019.
+                    <br/><br/>WIKIPEDIA. John Vincent Atanasoff. 2019. Disponível em: <https://en.wikipedia.org/wiki/John_Vincent_Atanasoff>. Acesso em: 23 nov. 2019.                    
+                </p>
+                <hr>
+
+                <h1>Primeira Geração </h1>
+                  <p>
+                      <br/><br/>ERIC. Alan Turing. 2007. Disponível em: <https://www.flickr.com/photos/lilredtank/522635692/in/photolist-2hqNcyr-zaga19-RozdC9-tyhKVD-NbDod-7qRJgw-3xZKPy-drFUde-Ekcn6K-2fdLkMm-zcVDFS-9H5m3C-43Fy4i-6RqDVm-43Fy9R-43FygR-23ZhCbz-r6Ka6F-cj73ff-FqPa62-ZohmyN-bfWQYn-fkoXZ6-fkoXzt-fkoTwg-2h5JdBV-XKjNP9-6F1Pj8-6F1PmT-6F5Y2f-6F1Pdi-fkp1ft-fkD96Y-cjh6Nw-nP374a-23TzJYg-hM1WzX-7qRG3J-7qRKfN-9QYMVk-2es1yQh-22jZasJ-faCp84-Q7HRHP-mqfmTp-bLaAGM-7hfYvD-213ARh7-7qMMqP-B5tU6Z>. Acesso em: 23 nov. 2019.
+                      <br/><br/>GOTCHY, Thomas. John von Neumann, IAS computer. 2003. Disponível em: <https://www.flickr.com/photos/tellytomtelly/6981025815/in/photolist-bCTzL4-tKSsr9-EttaVU-wKZi22-qsXd23-pXgi3X-rSkxgV-VxdcJ3-pTF17P-2E1arR-p8YZ2R-r2nPMj-WbLD6z-27TcYym-fhU4SC-2g3DruP-VSXudb-85Ltyg-W6mVyH-WaDLdw-pwnNuS-pCw9ED-9jJBu-2earkUT-THTQ6w-27VLgbz-2943PBN-WjPGqN-2aaMVeh-2hDX7MM-CFKEKV-2f2xHKw-eSEr9p-vUsz1E-qzk3Fi-24tkpot-bF6Sc6-2bbWwME-RBXNaL-qQgsk1-7VYLvK-qDuDCJ-fEzz27-rRX1sg-rycQnV-qGM16w-p4Sc6E-24wGhYM-pUgHoZ-qu88Vj>. Acesso em: 23 nov. 2019.
+                      <br/><br/>NIEUWBOURG, Philippe. P200908031 - John Mauchly. 2009. Disponível em: <https://www.flickr.com/photos/museeinformatique/3788982158/in/photolist-6LPwoA-bkuhxL-39tJ4Z-6LPvNs-4GvZz5-21JCcTw-8X6VhV-4dMMW2-a9KEah-6ab4cn-21JC7mQ-8sAmdf-raDrFS-7RHn3s-cWgERN-cWgEKb-cWgEZs-cWgENu-cyjXum-tAnsdG-cwLr8E-i9dNfb-cwLr39-cwLqXW-g62gd7-cwLrc1-cwLrhW-cgztj1-cwLr5w-cwLqZY-82oFoQ-xfFJyf-6pvGnr-ie3KJG-85kaZK-hVcWn4-ounJZn-7nzTRV-wLme4a-rawQmK-r8Smda-cwLrm7-nPsnW7-g62fTQ-cwLrf3-2c24qcW-gcR8AS-bCELaL-3uTgJD-eZXwiW>. Acesso em: 23 nov. 2019.
+                      <br/><br/>REIS, Sandro Ricardo dos. John Presper Eckert. 2017. Disponível em: <https://sites.google.com/site/pioneiroscomputacao/p-ate1949/p23>. Acesso em: 23 nov. 2019.
+                      <br/><br/>WIKIPÉDIA. Colossus (computador). 2019. Disponível em: <https://pt.wikipedia.org/wiki/Colossus_(computador)>. Acesso em: 23 nov. 2019.
+                      <br/><br/>WIKIPÉDIA. EDVAC. 2019. Disponível em: <https://pt.wikipedia.org/wiki/EDVAC>. Acesso em: 23 nov. 2019.
+                      <br/><br/>WIKIPÉDIA. UNIVAC I. 2019. Disponível em: <https://pt.wikipedia.org/wiki/UNIVAC_I>. Acesso em: 23 nov. 2019.                     
+                  </p>
+
+                  <hr>
+
+                  <h1>Segunda Geração</h1>
+                    <p>
+                      <br/><br/>AJMEXICO. PDP-8/s. 2007. Disponível em: <https://www.flickr.com/photos/ajmexico/2682618330/in/photolist-5647Yb-pX5hML-7J4p7V-4T231n-MXJ5qj-53hGRn-4T6fF9-4T6fpw-4T6fJ1-CGmj2-x417W-Pr5P6-9N63zH-qYSmGT-5Shr7C-4GB5UJ-6N4CBd-RXZpD7-fpToJM-CGmiZ-8AnVaw-5A8cbB-9NcsbG-ruYP6F-p8LHiM-77CRez-M8LRBD-ihM2J-dcy5s9-a5imB-5Rqfb1-63Ziua-7yY4nr-ruYTx6-jZHhFT-6PjWj6-58jV5j-5znBSb-21s7C4n-pGnfFJ-9ZneHp-6Jdysr-caCowS-6MUdH6-qeCgea-9eQenD-f1EgHE-6u4a8j-hADHkp-5zofUw>. Acesso em: 23 nov. 2019.
+                      <br/><br/>CHANDLER, David L.. Kenneth Olsen, MIT Corporation life member emeritus, dies at 84. 2011. Disponível em: <http://news.mit.edu/2011/obit-olsen>. Acesso em: 23 nov. 2019.
+                      <br/><br/>CHANDLER, Nick Bywater And Matt. Burroughs B5000 Computer. 2019. Disponível em: <https://www.cs.uaf.edu/2010/fall/cs441/proj1/b5000/>. Acesso em: 23 nov. 2019. 
+                      <br/><br/>WIKIPÉDIA. CDC 6600. 2019. Disponível em: <https://pt.wikipedia.org/wiki/CDC_6600>. Acesso em: 23 nov. 2019.
+                      <br/><br/> WIKIPÉDIA. IBM 1401. 2019. Disponível em: <https://pt.wikipedia.org/wiki/IBM_1401>. Acesso em: 23 nov. 2019.
+                      </p>
+                  <hr>
+
+                  <h1>Terceira Geração</h1> 
+                  <p>
+                    <br/><br/>WIKIPÉDIA. IBM 7094. 2019. Disponível em: <https://pt.wikipedia.org/wiki/IBM_7090>. Acesso em: 23 nov. 2019.
+                    <br/><br/>WIKIPÉDIA. IBM System/360. 2019. Disponível em: <https://pt.wikipedia.org/wiki/IBM_System/360>. Acesso em: 23 nov. 2019.
+                      
+                  </p>
+                
+                  <hr>
+
+                  <h1>Quarta Geração</h1>
+                    <p>
+                       <br/><br/> CARLTN, Ritz. Steve Jobs. 2011. Disponível em: <https://www.flickr.com/photos/ritzcarltn/6216913617/in/photolist-atniPP-aKpoWT-atqt2s-atQKMF-awoxku-qNcWA-azF86i-awkReg-aSoMtg-atiA87-atBgwM-auCjgb-GS3q1z-atgWEe-GyBj7-au1LtE-atFSYW-av8NY3-5vu96U-kqbrNx-atmEZA-4tMKoq-Dj74gt-6eZ5F1-bkCsXt-atTwkN-atTuGC-avjLdo-ath3D4-c811p3-bmcyhk-6ZtQ3v-voD6QH-bfStbK-aB7Eba-atjRcs-Encafu-zsXHyk-7NiZiT-7NiYpe-5mEcKz-aUDsgX-AiP8bs-7xUMY6-fEZFqF-atjY6C-atj8Lo-atGaeu-aqYeRA-atjxpD>. Acesso em: 23 nov. 2019.
+                       <br/><br/> SKIDMORE, Gage. Steve Wozniak. 2017. Disponível em: <https://www.flickr.com/photos/gageskidmore/36998207703/in/photolist-Ynpu9P-ZjkEtN-YiUYpo-5ExXGw-5EtDsK-5EtEbZ-5ExXBS-5EtE3a-5ExXam-5ExWPh-5EtCVv-5ExVDm-5ExWAb-7as4WN-4QRetk-ZoKj8k-5ExUMy-5ExU6A-5ExRty-5ExURG-5EtAx2-5ExUc1-5ExUW5-5EtzhT-5ExVnj-5EtyWa-5EtBXZ-5ExV8W-5ExXwb-5EtCqD-5EtD3z-5ExXKo-5EtD8x-5ExXps-5EtCYZ-5ExVP3-5ExVzE-5EtDkV-5ExX5j-5EtCRn-5ExWSQ-5ExXfy-5EtDoX-5EtDF2-5EtCKV-5ExWv9-5EtCyx-5ExVYN-5ExWW9-5ExUhL>. Acesso em: 23 nov. 2019.
+                       <br/><br/>WIKIPÉDIA. DEC Alpha. 2019. Disponível em: <https://pt.wikipedia.org/wiki/DEC_Alpha>. Acesso em: 23 nov. 2019.
+                       <br/><br/> WIKIPÉDIA. IBM PC. 2019. Disponível em: <https://pt.wikipedia.org/wiki/IBM_PC>. Acesso em: 23 nov. 2019.
+                       <br/><br/> WIKIPÉDIA. Macintosh. Disponível em: <https://pt.wikipedia.org/wiki/Macintosh>. Acesso em: 23 nov. 2019.
+                    </p>
+          </div>
+        <div class="col-2"></div>
+      </div>
+
+
+      <section class="footer-site">
+          <div class="container c1">
+                <div class="row">
+                    <div class="col-12 mb-3"><hr></div>
+              
+                    <div class="col-sm-4 ">
+                      <h3>Siqueira Websites</h3>
+                        <p>A principal base teórica para a criação deste site foi o livro: "Organização estruturada de Computadores 6ª Edição" escrito por Tanenbaum e Austin </p>
+
+                    </div>
+              
+                    <div class="col-sm-4 ">
+              
+                      <h3>MENU</h3>
+              
+                      <div class="list-group text-center">
+                        <a href="index.html" class="list-group-item list-group-item-action list-group-item-dark">HOME</a>
+                        <a href="pagina1.html" class="list-group-item list-group-item-action list-group-item-dark">HISTÓRIA</a>
+                        <a href="pagina6.html" class="list-group-item list-group-item-action list-group-item-dark">SOBRE</a>
+              
+                      </div>
+                    </div>
+              
+                    <div class="col-sm-4">
+              
+                      <h3>Social</h3>
+              
+                      <div class="btn-group-vertical btn-block btn-group-lg" role="group">
+                        <a class="btn btn-outline-primary" href="https://www.facebook.com/gabriel.siqueira.1213986">Facebook</a>
+                        <a class="btn btn-outline-dark" href="https://twitter.com/Gabriel53451774">Twitter</a>
+              
+                      </div>
+                    </div>
+              
+              
+  
+            </div>
+           
+          </div> 
+          <div class="col-12">
+                <br>
+                <p>Copyright &copy; 2019 - by Gabriel Siqueira<br/> </p>
+                </div>
+        </section>
+  
+
+</body>
+</html>
