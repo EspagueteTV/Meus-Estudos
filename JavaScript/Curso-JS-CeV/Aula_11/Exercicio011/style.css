@@ -1,0 +1,59 @@
+body{
+    background: #6b6666;
+    background-image: url(/Aula_11/Exercicio011/images/sea.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    background-origin: border-box;
+    
+}
+.interface{
+    background-color: #7a8186b2;
+    border-radius: 15px;
+    margin-left: 20%;
+    margin-right: 20%;
+    max-width: 60%;
+    min-height: 60%;
+    margin-top: 100px;
+    margin-bottom: auto;
+    padding: 10px;
+    position: relative;
+    border:  solid 2px;
+    text-align: center;
+    color: blacks;
+    font-weight: bold;
+
+}
+.interface h1{
+    text-align: center;
+    border-bottom: 2px solid #13520d;
+    font: normal 20pt Arial;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    position: relative;
+    border-radius: 5px;
+    
+}
+
+.interface input{
+    border: 2px solid #000000;
+    background-color: #221c1c18;
+}
+
+#btn{
+    margin-top: 50px;
+    padding: 10px;
+    border: 2px solid #000000;
+    background-color: #312c2c65;
+    transition: border-radius 0.5s ;
+}
+#btn:hover{
+    background-color: #221c1c;
+    color: white;
+    border-radius: 25%;
+
+}
+#rest{
+    margin-top: 25px;
+}

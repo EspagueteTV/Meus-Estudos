@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+    <head>
+        <meta charset="utf-8">
+        <title>País Atual</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class="interface">
+            <h1>Nacionalidade</h1>
+                País de Nascimento: <input type="text" name="txt_pais" id="txt_pais"/>
+                <br>
+                <input type="button" value="Enviar" onclick="Verificar()" id="btn" />
+            <div id="rest">
+                
+            </div>
+        </div>
+
+        <script>
+            function Verificar(){
+                var pais = window.document.querySelector("input#txt_pais")
+                var p = String(pais.value).toLocaleUpperCase()
+                var resultado = window.document.querySelector("div#rest")
+
+                
+
+                if(p == ''){
+                    window.alert("Por favor, informe seu país de Nascimento!")
+                }
+                else{
+
+                    resultado.innerHTML = `<p>Vivendo em <strong> ${p} </strong> </p>`
+
+                    if(p == 'BRASIL'){
+                        resultado.innerHTML += `<p>Você é Brasileiro! </p>`
+                    }
+                    else{
+                        resultado.innerHTML += `<p>Você é Estrangeiro </p>`
+                    }
+                }
+            }
+        </script>
+
+
+    </body>
+</html>
