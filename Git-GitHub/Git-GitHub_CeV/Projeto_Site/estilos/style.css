@@ -1,0 +1,50 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+}
+
+p {
+    text-indent: 50px;
+    font-size: 16px;
+    font-family:   Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: justify;
+   
+
+}
+
+h1 {
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: font-size 3s, transform 0.5s ;
+}
+
+h1:hover {
+    font-size: 30px;
+    transform: rotate(30px deg);
+}
+
+
+h2 {
+    font-style: italic;
+}
+
+
+
+
+body{
+    background-color: #526e6e;
+}
+
+main{
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 7px 3px 7px #020202;
+}
+
+.lado {
+    float: right;
+}
