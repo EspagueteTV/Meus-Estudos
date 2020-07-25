@@ -62,9 +62,19 @@ public class TiposDeTriangulo extends javax.swing.JFrame {
 
         sliB.setMaximum(20);
         sliB.setValue(0);
+        sliB.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                sliBStateChanged(evt);
+            }
+        });
 
         sliC.setMaximum(20);
         sliC.setValue(0);
+        sliC.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                sliCStateChanged(evt);
+            }
+        });
 
         btnVerificar.setText("Verificar");
         btnVerificar.addActionListener(new java.awt.event.ActionListener() {
@@ -144,7 +154,7 @@ public class TiposDeTriangulo extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(panResposta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(167, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -180,13 +190,40 @@ public class TiposDeTriangulo extends javax.swing.JFrame {
 
     private void btnVerificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerificarActionPerformed
         // TODO add your handling code here:
+        int a = sliA.getValue();
+        int b = sliB.getValue();
+        int c = sliC.getValue();
+
+        if ((a < (b + c)) && (b < (a + c)) && (c < (b + a))) {
+            lblStatus.setText("Formam um triângulo");
+            if (a == b && b == c) {
+                lblTipo.setText("Equilátero");
+            } else if (a != b && b != c && a != c) {
+                lblTipo.setText("Escaleno");
+            } else {
+                lblTipo.setText("Isósceles");
+            }
+        } else {
+            lblStatus.setText("Não formam um triângulo");
+            lblTipo.setText("-");
+        }
         panResposta.setVisible(true);
     }//GEN-LAST:event_btnVerificarActionPerformed
 
     private void sliAStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_sliAStateChanged
         // TODO add your handling code here:
-        
+        lblA.setText(Integer.toString(sliA.getValue()));
     }//GEN-LAST:event_sliAStateChanged
+
+    private void sliBStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_sliBStateChanged
+        // TODO add your handling code here:
+        lblB.setText(Integer.toString(sliB.getValue()));
+    }//GEN-LAST:event_sliBStateChanged
+
+    private void sliCStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_sliCStateChanged
+        // TODO add your handling code here:
+        lblC.setText(Integer.toString(sliC.getValue()));
+    }//GEN-LAST:event_sliCStateChanged
 
     /**
      * @param args the command line arguments

@@ -64,7 +64,7 @@
                       <Component id="panResposta" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace pref="167" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -138,12 +138,18 @@
         <Property name="maximum" type="int" value="20"/>
         <Property name="value" type="int" value="0"/>
       </Properties>
+      <Events>
+        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="sliBStateChanged"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JSlider" name="sliC">
       <Properties>
         <Property name="maximum" type="int" value="20"/>
         <Property name="value" type="int" value="0"/>
       </Properties>
+      <Events>
+        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="sliCStateChanged"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnVerificar">
       <Properties>
