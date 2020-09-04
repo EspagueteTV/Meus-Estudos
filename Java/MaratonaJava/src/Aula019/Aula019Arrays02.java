@@ -1,3 +1,5 @@
+package Aula019;
+
 public class Aula019Arrays02 {
     public static void main(String[] args){
         float idade[]= new float[3];

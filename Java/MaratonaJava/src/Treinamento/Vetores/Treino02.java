@@ -1,7 +1,7 @@
 /**  Faça um programa que preencha um vetor de tamanho 100 com os 100 primeiros naturais que não
  * são múltiplos de 7 ou que terminam com 7.
  * */
- package Treinamento;
+ package Treinamento.Vetores;
 
 public class Treino02 {
     public static void main(String[] args){

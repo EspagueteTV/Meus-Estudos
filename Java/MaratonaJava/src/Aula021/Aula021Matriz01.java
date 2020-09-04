@@ -1,3 +1,5 @@
+package Aula021;
+
 public class Aula021Matriz01 {
     public static void main(String[] args){
         int[][] dias = new int[2][2];

@@ -1,3 +1,5 @@
+package Aula020;
+
 public class Aula020Arrays04 {
     public static void main(String[] args){
         int numeros[] =  new int[5];

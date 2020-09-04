@@ -1,3 +1,5 @@
+package Aula06;
+
 public class Aula06Operadores {
     public static void main(String[] args){
         int numero1 = 10;

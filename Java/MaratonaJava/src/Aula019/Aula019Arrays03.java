@@ -1,3 +1,5 @@
+package Aula019;
+
 public class Aula019Arrays03 {
     public static void main(String[] args){
         String nome[] = new String[5];

@@ -1,4 +1,4 @@
-package Treinamento;
+package Treinamento.Vetores;
 import java.util.Scanner;
 public class Treino01 {
     public static void main(String[] args){

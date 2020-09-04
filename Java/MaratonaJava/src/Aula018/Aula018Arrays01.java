@@ -1,3 +1,5 @@
+package Aula018;
+
 public class Aula018Arrays01 {
     public static void main(String args[]){
         int idade[] = new int[3];

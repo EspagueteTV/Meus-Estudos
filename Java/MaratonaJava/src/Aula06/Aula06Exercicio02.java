@@ -1,3 +1,5 @@
+package Aula06;
+
 public class Aula06Exercicio02 {
     public static void main(String[] args){
         String nome = "Gabriel";

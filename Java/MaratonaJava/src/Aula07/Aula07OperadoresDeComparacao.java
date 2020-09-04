@@ -1,3 +1,5 @@
+package Aula07;
+
 public class Aula07OperadoresDeComparacao {
     public static void main(String[] args) {
         boolean dezMaiorVinte = 10 >= 20;

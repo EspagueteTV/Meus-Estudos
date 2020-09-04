@@ -1,3 +1,5 @@
+package Aula020;
+
 public class Aula020Arrays05 {
     public static void main(String[] args){
         String nome[] = {"Tony", "Steve", "Bruce"};
