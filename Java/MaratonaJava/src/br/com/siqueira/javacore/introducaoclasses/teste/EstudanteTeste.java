@@ -1,6 +1,6 @@
-package br.com.siqueira.javacore.introducaoclassesteste;
+package br.com.siqueira.javacore.introducaoclasses.teste;
 
-import br.com.siqueira.javacore.introducaoclasses.Estudante;
+import br.com.siqueira.javacore.introducaoclasses.classes.Estudante;
 
 public class EstudanteTeste {
     public static void main(String[] args){
