@@ -9,11 +9,12 @@ public class Professor {
     public String cpf;
     public String matricula;
 
-    public void imprimi(Professor prof){        // Variável de Referência do tipo Professor
+    public void imprimi(){
         System.out.println("-=-=-=-=-=-=-=-=");
-        System.out.println(prof.nome);
-        System.out.println(prof.matricula);
-        System.out.println(prof.cpf);
-        System.out.println(prof.rg);
+        System.out.println(this.nome);
+        System.out.println(this.matricula);
+        System.out.println(this.cpf);
+        System.out.println(this.rg);
+
     }
 }

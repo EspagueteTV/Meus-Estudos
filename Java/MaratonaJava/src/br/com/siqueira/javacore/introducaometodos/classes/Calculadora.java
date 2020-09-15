@@ -33,4 +33,22 @@ public class Calculadora {
         System.out.println("Dentro do altera dois números");
         System.out.printf("num1 = %d, num2 = %d \n", num1, num2);
     }
+
+    public void somaArray(int[] numeros){
+        int soma = 0;
+        for(int num : numeros){
+            soma += num;
+        }
+
+        System.out.println(soma);
+    }
+
+    public void somaVarArgs(double valor, int... numeros){
+        int soma = 0;
+        for(int num : numeros){
+            soma += num;
+        }
+
+        System.out.println(soma);
+    }
 }

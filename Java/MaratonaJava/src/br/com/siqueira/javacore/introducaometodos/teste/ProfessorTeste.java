@@ -10,8 +10,6 @@ public class ProfessorTeste {
         prof.nome = "Marcos";
         prof.rg = "1.987.098";
 
-        // Chamar o método imprimir
-        prof.imprimi(prof);     // Passando o endereço da memória do Objeto
-
+        prof.imprimi();
     }
 }
