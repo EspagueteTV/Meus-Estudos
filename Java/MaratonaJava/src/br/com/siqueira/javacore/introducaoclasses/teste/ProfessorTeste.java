@@ -7,17 +7,20 @@ import java.util.Scanner;
 public class ProfessorTeste {
     public static void main(String[] args){
         Professor discente = new Professor();
+        Professor discente2 = new Professor();
         Scanner teclado = new Scanner(System.in);
 
         // Leitura dos dados para o objeto discente
-        System.out.print("Informe o nome do Professor: ");
-            discente.nome = teclado.nextLine();
-        System.out.printf("Informe a matrícula do professor %s: ", discente.nome);
-            discente.matricula = teclado.nextInt();
-        System.out.printf("Informe o CPF do professor %s: ", discente.nome);
-            discente.cpf = teclado.nextInt();
-        System.out.printf("Informe o RG do professor %s: ", discente.nome);
-            discente.rg = teclado.nextInt();
+
+            discente.nome = "Homer";
+            discente.matricula = 2019314207;
+            discente.cpf = 431234543;
+            discente.rg = 3123654;
+
+        discente2.nome = "Marge";
+        discente2.matricula = 876534207;
+        discente2.cpf = 431234543;
+        discente2.rg = 31236765;
 
         System.out.println("-----> Apresentação dos Dados");
         System.out.printf("O professor %s tem o número de matrícula igual a %d \n", discente.nome, discente.matricula);
