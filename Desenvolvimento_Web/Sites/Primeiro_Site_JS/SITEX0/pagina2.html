@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+  <head>
+    <title>Bootstrap</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Inserção do Bootstrap versão 4 -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- Fim insercão Bootstrap Versão 4-->
+    <!-- Javascript do site-->
+    <script src="js/site.js"></script>
+    <script src="js/pagina2.js"></script>
+
+    <!-- css do site-->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Text&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>                                                                                             <!-- div=c ontainer espaço nos cantos-->
+      <div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">                                   <!-- Barra de Navegação      navbar que vai ocupar toda barra-->
+          
+          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu">                   <!-- Botao no HTML 5 target= marcar/rotulo || toggler: mostra -->
+            <span class="navbar-toggler-icon"> </span>
+
+            
+          </button>
+
+
+          <div id="menu" class="collapse navbar-collapse  ">                                                  <!-- collapse: esconder   2ª parte quando a tela for menor esconde o menu -->
+            <div class="navbar-nav">                                                                <!-- Onde vai os itens de navegação -->
+              <a class="nav-item nav-link" href="index.html" > HOME   </a>
+              <a class="nav-item nav-link" href="pagina1.html" > Menu2 </a>
+              <a class="nav-item nav-link active" href="pagina2.html" > ITEM 2 </a>
+              <a class="nav-item nav-link" href="pagina3.html" > ITEM 3 </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+
+      <div class="container">
+        <form>
+            <br>
+          <label for="nome"> Nome:    </label>
+            <input class="form-control" id="nome" type="text" placeholder="Digite seu nome" required autofocus>  
+              <br> <br>            
+                <a href="#" id="enviar" class="btn btn-primary" >Enviar</a>
+                <a href="#" id="add" class="btn btn-primary" >Add</a>
+                <a href="#" id="remove" class="btn btn-primary" >Remover</a>
+
+              <br> <br>
+            <input class="form-control" id="resultado" type="text"> 
+
+
+            <div class="bloco1" id="bloco">
+              Bloco   
+            </div>
+
+
+
+
+
+
+
+
+        </form>
+      </div>
+
+
+
+
+
+
+
+
+  </body>
+</html>

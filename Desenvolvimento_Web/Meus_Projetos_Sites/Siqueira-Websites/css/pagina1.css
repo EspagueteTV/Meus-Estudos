@@ -1,0 +1,61 @@
+.body
+{
+    background: url(/imagem/fundo.jpg);
+    background: #5a8fc0
+}
+
+.header-site
+{
+    background-image: url(/imagem_computador/mark_I.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;   /* quando move o scroll a imagem vai ficar fixa */
+    color: #fff;
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+
+.img-site 
+{
+    background-image: url(/imagem_computador/515396127_d2a31d35a6_c.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    color: #fff;
+}
+
+/* Formatação da Imagem */
+
+figure.foto-legenda {
+    position: relative; 
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black ;                      /*colocar sombra */
+}
+
+figure.foto-legenda img {
+    width: 80% ;
+    height: 40% ;
+}
+
+figure.foto-legenda figcaption {
+    opacity: 0;
+    position: absolute ;  /* posiçao da escrita */
+    top : 0px ;
+    background-color: rgba(5, 5, 5, 0.4);
+    color: white ;
+    width: 100% ;
+    height: 100% ;
+    padding: 3px ;
+    box-sizing: border-box ;
+    transition: opacity 1s;  /* quanto segundo ele leva para mostrar o texto na tela */
+}
+figure.foto-legenda:hover figcaption { /*Uma formatção especifica quando vc passar o mouse no objeto na imagem */
+    opacity: 1;
+}
+
+
+

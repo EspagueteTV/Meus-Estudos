@@ -1,0 +1,41 @@
+/* Css Externo */
+body{
+    background-color: #010e479a;
+    margin: 0px ;    /* tirar a borda que estava no lado da imagem */
+    padding: 0px ; 
+}
+.header
+{
+    height: 800px; /* altura */
+    background-image: url(/images/espaco.jpg); /* imagem do fundo */
+    background-repeat: no-repeat; /* Não repetir a imagem */
+    background-size: cover; /* cobrir todo o espaço da div */
+    text-align: center; /* Texto Centralizado */
+}
+#titulo
+{
+    color: #FFF ;
+    margin: 0px ; /*Quando se coloca apenas uma vez o número repete nos quatro */
+    padding: 0px ;
+    line-height: 80px;  /* Altura da Linha */
+    margin-bottom: 80px ; /* Distância do Chão */ 
+    font-size: 80px ; /* Tamanho fonte */
+    font-family: 'Roboto', sans-serif; /* tipo de fonte que voce que nesta classe //// Para encontrar a fonte busque no Google Fonts e aperte no + depois coloque o link antes do link.css no html */ 
+    padding-top: 250px ; 
+    font-weight: bold ;  /*Deixar o Texto em Negrito // bold, bolder , lig */
+    font-style: italic; /*Deixar em Italico */
+}
+.main
+{
+    height: 200px ;
+    background-color: #0C8BEB ;
+    color: #FFF ;
+    /* 
+    MARGEM EXTERNA
+     margin: 50px 0px 0px 0px ;  na linha  tipos: top(topo) rigth(direito) bottom(baixo)  left(esquerdo) 
+     margin-left: 100px ;  separado 
+     
+    MARGEM INTERNA */
+    padding-top: 50px ;      
+    padding-left: 25px ;
+}

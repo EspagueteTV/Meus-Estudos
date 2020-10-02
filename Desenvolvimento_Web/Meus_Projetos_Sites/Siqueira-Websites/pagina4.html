@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+  <title>Siqueira Websites</title>
+  <meta charset="utf-8">
+  <!-- icone do navegador -->
+  <link rel="icon" href="imagem/icone_navegador.jpg" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Inserção do Bootstrap versão 4 -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <!-- Fim insercão Bootstrap Versão 4-->
+  <!-- Javascript do site-->
+  <script src="js/site.js"></script>
+  <!-- css do site-->
+  <link rel="stylesheet" href="css/pagina4.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pagina_padrao.css">
+
+
+
+</head>
+<body>
+
+  <div id="interface">
+      <!-- Criação do Menu -->
+    
+    <nav class="navbar navbar-fixed-top navbar-expand-md navbar-dark bg-dark " >                                   <!-- Barra de Navegação      navbar que vai ocupar toda barra-->
+      <div class="container">
+        <a class="navbar-brand h1 mb-0" href="#">Siqueira Websites</a>  <!-- mb margem botton-->
+
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu">                   <!-- Botao no HTML 5 target= marcar/rotulo || toggler: mostra -->
+              <span class="navbar-toggler-icon"> </span>
+            </button>
+
+            <div id="menu" class="collapse navbar-collapse  ">                                                  <!-- collapse: esconder   2ª parte quando a tela for menor esconde o menu -->
+              <div class="navbar-nav mr-auto">        <!--   ml-auto margem right -->                                                    <!-- Onde vai os itens de navegação -->
+                  <a class="nav-item nav-link" href="index.html">HOME</a>
+                  <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" data-toggle="dropdown" id="navDrop"> HISTÓRIA</a>
+                      <div class="dropdown-menu"> <!-- Itens que vao ser chamados ao ser clicado neste link-->
+                        <a class="dropdown-item" href="pagina1.html"> A Geração Zero</a>
+                        <a class="dropdown-item" href="pagina2.html"> A Primeira Geração</a>
+                        <a class="dropdown-item" href="pagina3.html"> A Segunda Geração</a>
+                        <a class="dropdown-item active" href="pagina4.html"> A Terceira Geração</a>
+                        <a class="dropdown-item" href="pagina5.html"> A Quarta Geração</a>
+                    </div>  
+                  </div> 
+                  <a class="nav-item nav-link" href="pagina6.html">SOBRE O AUTOR</a>
+                </div>
+  
+            </div>
+
+      </div>
+    </nav>
+
+    <!-- FIM DO MENU -->
+
+      <section class="header-site">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-12">
+
+              <h1 class="text-center">A Terceira Geração (1965 - 1980)</h1>
+              <p class="lead text-center">Circuitos Integrados </p>
+              <p class="text-center">
+                <a href="#" class="btn btn-dark">Saiba Mais</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-site">
+        <div class="container">          
+
+          <div class="row my-5">
+            <div class="col-2"></div>
+            <div class="col-8">
+
+              <h1 id="title">Terceira Geração</h1>
+
+              <br>
+            <h2>Introdução</h2>
+                <p>A invenção do circuito integrado de silício por Jack Kilby e Robert Noyce (trabalhando independentemente)
+                    em 1958 permitiu que dezenas de transistores fossem colocados em um único chip. Esse empacotamento possibilitava a construção de computadores menores, mais rápidos e mais baratos do que seus precursores transistorizados. Alguns dos computadores mais significativos dessa geração são descritos a seguir.</p>
+
+                    <br>
+              <h2>Problema da IBM com as máquinas 7094 e 1401</h2>
+                  <p>Em 1964, a IBM era a empresa líder na área de computadores e tinha um grande problema com suas duas
+                      máquinas de grande sucesso, a 7094 e a 1401: elas eram tão incompatíveis quanto duas máquinas podem ser.
+                      Uma era uma processadora de números de alta velocidade, que usava aritmética binária em registradores de 36
+                      bits; a outra, um processador de entrada/saída avantajado, que usava aritmética decimal serial sobre palavras de
+                      comprimento variável na memória. Muitos de seus clientes empresariais tinham ambas e não gostavam da ideia
+                      de ter dois departamentos de programação sem nada em comum.</p>
+
+                      <figure class="foto-legenda">
+                          <img src="imagem_computador/ibm 7094.JPG" alt="Fotografia representando o IBM 7094" />
+                            <figcaption>
+                                  <h3>IBM 7094</h3>
+                                      <p>Dominou a computação científica  no início da década de 1960</p>
+                                        <p class="lead">Fonte: Wikipédia (2019) </p>
+                            </figcaption>
+                      </figure>
+
+                      <br>
+                <h2>IBM SYSTEM 360 (1964)</h2>
+                    <p>Quando chegou a hora de substituir essas duas séries, a IBM deu um passo radical. Lançou uma única linha
+                        de produtos, a linha System/360, baseada em circuitos integrados e projetada para computação científica e também comercial. A linha System/360 continha muitas inovações, das quais a mais importante era ser uma família
+                        de uma meia dúzia de máquinas com a mesma linguagem de montagem e tamanho e capacidade crescentes. Uma
+                        empresa poderia substituir seu 1401 por um 360 Modelo 30 e seu 7094 por um 360 Modelo 75. O Modelo 75
+                        era maior e mais rápido (e mais caro), mas o software escrito para um deles poderia, em princípio, ser executado
+                        em outro. Na prática, o programa escrito para um modelo pequeno seria executado em um modelo grande sem
+                        problemas. Porém, a recíproca não era verdadeira. Quando transferido para uma máquina menor, o programa
+                        escrito para um modelo maior poderia não caber na memória. Ainda assim, era uma importante melhoria em
+                        relação à situação do 7094 e do 1401. A ideia de famílias de máquinas foi adotada de pronto e, em poucos anos,
+                        a maioria dos fabricantes de computadores tinha uma família de máquinas comuns que abrangiam uma ampla
+                        faixa de preços e desempenhos</p>
+
+                        <figure class="foto-legenda">
+                            <img src="imagem_computador/ibm360.jpg" alt="Fotografia representando o IBM System 360" />
+                              <figcaption>
+                                    <h3>IBM System 360</h3>
+                                        <p>Primeira linha de produto projetada como uma família</p>
+                                          <p class="lead">Fonte: Wikipédia (2019) </p>
+                              </figcaption>
+                        </figure>
+
+                  <p>Outra importante inovação da linha 360 era a multiprogramação, com vários programas na memória ao
+                      mesmo tempo, de modo que, enquanto um esperava por entrada/saída para concluir sua tarefa, outro podia executar, o que resultava em uma utilização mais alta da CPU.</p>
+                  <p>A 360 também foi a primeira máquina que podia emular (simular) outros computadores. Os modelos menores podiam emular a 1401, e os maiores podiam emular a 7094, de maneira que os clientes podiam continuar a
+                      executar seus antigos programas binários sem modificação durante a conversão para a 360. Alguns modelos executavam programas 1401 com uma rapidez tão maior que a própria 1401 que muitos clientes nunca converteram
+                      seus programas.</p>
+                  
+                  <p>A emulação era fácil na 360 porque todos os modelos iniciais e grande parte dos que vieram depois eram
+                      microprogramados. Bastava que a IBM escrevesse três microprogramas: um para o conjunto nativo de instruções
+                      da 360, um para o conjunto de instruções da 1401 e outro para o conjunto de instruções da 7094. Essa flexibilidade foi uma das principais razões para a introdução da microprogramação na 360. É lógico que a motivação de
+                      Wilkes para reduzir a quantidade de válvulas não importava mais, pois a 360 não tinha válvula alguma.</p>
+                  <p>A 360 resolveu o dilema “binária paralela” versus “decimal serial” com uma solução conciliatória: a máquina
+                      tinha 16 registradores de 32 bits para aritmética binária, mas sua memória era orientada para bytes, como a da 1401.
+                      Também tinha instruções seriais no estilo da 1401 para movimentar registros de tamanhos variáveis na memória.</p>
+                  <p>Outra característica importante da 360 era (para a época) um imenso espaço de endereçamento de 224
+                      (16.777.216) bytes. Como naquele tempo a memória custava vários dólares por byte, esse tanto de memória
+                      parecia uma infinidade. Infelizmente, a série 360 foi seguida mais tarde pelas séries 370, 4300, 3080, 3090, 390
+                      e a série z, todas usando basicamente a mesma arquitetura. Em meados da década de 1980, o limite de memória
+                      tornou-se um problema real e a IBM teve de abandonar a compatibilidade em parte, quando mudou para endereços de 32 bits necessários para endereçar a nova memória de 232 bytes.</p>
+
+                      <br>
+                <h2>Avanço dos Minicomputadores</h2>
+                    <p>O mundo dos minicomputadores também avançou um grande passo na direção da terceira geração quando a
+                        DEC lançou a série PDP-11, um sucessor de 16 bits do PDP-8. Sob muitos aspectos, a série PDP-11 era como um
+                        irmão menor da série 360, tal como o PDP-1 era um irmãozinho da 7094. Ambos, 360 e PDP-11, tinham registradores orientados para palavras e uma memória orientada para bytes, e ambos ocupavam uma faixa que abrangia
+                        uma considerável relação preço/desempenho. O PDP-11 teve enorme sucesso, em especial nas universidades, e
+                        deu continuidade à liderança da DEC sobre os outros fabricantes de minicomputadores.</p>
+
+          </div>
+          <div class="col-2"></div>
+        </div>
+      
+
+        </div>
+      </section>
+
+      <section class="img-site">
+
+        <div class="container">
+
+          <div class="row">
+            <div class="col-12">
+
+              <h1 class="text-center"> Descubra sobre A Quarta Geração dos Computadores - Integração em escala muito grande (1980 - ?) </h1>
+                   <br>
+                   <br>
+              <p class="lead text-center">
+                      <a href="pagina5.html">
+                        <button type="button" class="btn btn-dark active">Continue Lendo </button>
+
+                      </a>
+
+                   </p>
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+
+      <section class="footer-site">
+        <div class="container c1">
+              <div class="row">
+                  <div class="col-12 mb-3"><hr></div>
+            
+                  <div class="col-sm-4 ">
+                    <h3>Siqueira Websites</h3>
+                    <p>A principal base teórica para a criação deste site foi o livro: "Organização estruturada de Computadores 6ª Edição" escrito por Tanenbaum e Austin </p>
+
+                  </div>
+            
+                  <div class="col-sm-4 ">
+            
+                    <h3>MENU</h3>
+            
+                    <div class="list-group text-center">
+                        <a href="index.html" class="list-group-item list-group-item-action list-group-item-dark">HOME</a>
+                        <a href="pagina1.html" class="list-group-item list-group-item-action list-group-item-dark">HISTÓRIA</a>
+                        <a href="pagina6.html" class="list-group-item list-group-item-action list-group-item-dark">SOBRE</a>
+              
+                      </div>
+                  </div>
+            
+                  <div class="col-sm-4">
+            
+                    <h3>Social</h3>
+            
+                    <div class="btn-group-vertical btn-block btn-group-lg" role="group">
+                      <a class="btn btn-outline-primary" href="https://www.facebook.com/gabriel.siqueira.1213986">Facebook</a>
+                      <a class="btn btn-outline-dark" href="https://twitter.com/Gabriel53451774">Twitter</a>
+            
+                    </div>
+                  </div>
+            
+            
+
+          </div>
+         
+        </div> 
+        <div class="col-12">
+              <br>
+              <p>Copyright &copy; 2019 - by Gabriel Siqueira <br/></p>
+              </div>
+      </section>
+
+    </div>
+</body>
+</html>

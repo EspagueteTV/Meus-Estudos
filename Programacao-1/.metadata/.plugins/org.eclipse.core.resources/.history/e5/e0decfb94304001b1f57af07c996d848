@@ -1,0 +1,60 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class CalculadoraV2 {
+
+	Scanner teclado = new Scanner(System.in);
+	
+	// ----- Atributos -----
+		double parcela1;
+		double parcela2;
+		double soma;
+		double diferenca;
+		double produto;
+		double quociente;
+		
+	// ----- Métodos -----
+		
+		public void lerParcela1() {
+			System.out.print("Digite o valor da 1ª Parcela: ");
+				parcela1 = teclado.nextDouble();
+		}
+		
+		public void lerParcela2() {
+			System.out.print("Digite o valor da 2ª Parcela: ");
+				parcela2 = teclado.nextDouble();
+		}
+		
+		public void somar() {
+			this.soma = parcela1 + parcela2;
+		}
+		
+		public void subtrair() {
+			this.diferenca = parcela1 - parcela2;
+		}
+		
+		public void multiplicar() {
+			this.produto = parcela1 * parcela2;
+		}
+		
+		public void dividir() {
+			this.quociente = parcela1 / parcela2; 
+		}
+		
+		public void lerDuasParcelas() {
+			lerParcela1();
+			lerParcela2();
+		}
+		
+		public void mostraResultadoOperacoesBasicas() {
+			somar();
+			System.out.printf("A soma dos valores é %.2f \n", soma);
+			subtrair();
+			System.out.printf("A subtração dos valores é %.2f \n", diferenca);
+			multiplicar();
+			System.out.printf("O produto dos valores é %.2f \n", produto);
+			dividir();
+			System.out.printf("O quociente dos valores é %.2f \n", quociente);
+		}
+}

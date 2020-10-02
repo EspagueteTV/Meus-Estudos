@@ -1,0 +1,13 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.c1{
+    border: solid 2px #000000;
+    height: 80px;
+}
+.container-fluid{
+    top: 200px;
+    position: relative;
+}
+
