@@ -1,0 +1,15 @@
+package exercicios;
+
+public class CalculadoraTeste {
+
+	public static void main(String[] args) {
+		
+		Calculadora calc = new Calculadora();
+		
+		calc.lerParcela1();
+		calc.lerParcela2();
+		System.out.printf("A soma dos valores é %f \n", calc.soma);
+		
+		
+	}
+}
