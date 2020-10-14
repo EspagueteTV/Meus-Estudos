@@ -1,0 +1,4 @@
+
+ O código do exemplo não compila porque não foi inicializado a váriavel "x" no método main, as formas de
+ resolver a mesma, seria por meio de um atributo de instância (onde precisa criar um objeto) ou um atributo
+de classe (sem a necessidade de criar um objeto)
