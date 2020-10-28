@@ -1,3 +1,0 @@
-INDEX VERSION 1.131+C:\Users\Gabriel\3D Objects\Meus-Projetos\Git\Meus-Estudos-IFC\Programacao-1\.metadata\.plugins\org.eclipse.jdt.core
-3087928744.index
-2549697191.index
