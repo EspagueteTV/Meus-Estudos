@@ -6,46 +6,41 @@ import br.com.siqueira.trabalho3trimestre.classe.Relogio;
 
 public class RelogioTeste {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
-        Relogio r1 = new Relogio(23,0, 0);
+//        --------------------- CLASSE RELóGIO --------------------------
 
-        r1.incrementar(60, 60);
-//        r1.incrementar(3);
-//        r1.incrementar(30);
-//        r1.incrementar(25);
-//        r1.incrementar(5);
+        Relogio r1 = new Relogio(0, 1, 1);
 
-//        r1.decrementar();
-//        r1.decrementar();
-//        r1.decrementar();
-//        r1.decrementar();
+        System.out.println("Horario Inicial: " + r1.horarioAtual());
+        r1.incrementar();
+        r1.incrementar(2);
+        r1.incrementar(1, 1);
+        r1.incrementar(1, 1, 1);
 
-//        r1.ajustarHorario(30, 23, 11);
-//        System.out.println(r1.horarioAtual());
+        r1.decrementar();
+        r1.decrementar(2);
+        r1.decrementar(1, 1);
+        r1.decrementar(1, 1, 1);
 
-        Cronometro r2 = new Cronometro(20,10,50,22);
+        r1.ajustarHorario(30, 23, 11);
+        System.out.println(r1.horarioAtual());
 
-//        r2.incrementar();
-//        r2.incrementar();
-//        r2.incrementar();
-//        r2.incrementar();
-//        r2.incrementar();
-//        r2.incrementar();
+//        --------------------- CLASSE CRONÔMETRO --------------------------
 
-//        r2.decrementar();
-//        r2.decrementar();
-//        r2.decrementar();
-//        r2.decrementar();
-//        r2.decrementar();
-//        r2.decrementar();
+        Cronometro r2 = new Cronometro(0, 0, 0, 0);
 
-//        Despertador r3 = new Despertador(59, 32, 2);
-//
-//        r3.horarioDespertador(2, 33);
-//
-//        r3.ativarAlarme();
-//
-//        r3.incrementar();
+        System.out.println("Horario atual; " + r2.horarioAtual());
+        r2.incrementar();
+        r2.decrementar();
+
+//        --------------------- CLASSE DESPERTADOR --------------------------
+
+        Despertador r3 = new Despertador(59, 32, 2);
+
+        r3.horarioDespertador(2, 34);
+        r3.ativarAlarme();
+        r3.incrementar();
+
     }
 }

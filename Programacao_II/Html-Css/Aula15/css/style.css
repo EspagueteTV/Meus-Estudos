@@ -1,0 +1,28 @@
+.cor1{
+    background-color: #686767;
+}
+
+.cor2{
+    background-color: #dddddd;
+}
+
+.cor3{
+    background-color: #454986;
+}
+
+.cor4{
+    background-color: darkcyan;
+}
+
+.image{
+    width: 50%;
+    margin: 20px;
+}
+
+
+.img-r{
+    border-radius: 50%;
+    width: 30%;
+    margin: 10px;
+    display: flex;
+text-align: center;}

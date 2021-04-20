@@ -1,0 +1,61 @@
+body, html, div{
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav{
+    background-color: #F00000;
+    height: 80px;
+    width: 100%;
+   
+}
+
+.main{
+    background-color: #0000FF;
+    height: 500px;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    float: left;
+}
+
+.footer{
+    background-color: #00FF00;
+    width: 100%;
+    height: 80px;
+
+}
+
+.quadro-1{
+    background-color: #665b29;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 30%;
+    box-shadow: 3px 3px 7px #000;
+    transition: visibility 0.5s;
+}
+
+.quadro-1:hover{
+    visibility: hidden;
+}
+
+.quadro-2{
+    background-color: #367994;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 30%;
+    box-shadow: 3px 3px 7px #000;
+
+}
+
+.quadro-3{
+    background-color: #753416;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 30%;
+    box-shadow: 3px 3px 7px #000;
+
+}

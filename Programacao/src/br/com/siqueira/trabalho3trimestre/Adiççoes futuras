@@ -1,0 +1,6 @@
+@Override
+    public void incrementar(int centesimo, int segundo){
+        incrementar(centesimo);
+        super.incrementar(segundo);
+        System.out.println(horarioAtual());
+    }

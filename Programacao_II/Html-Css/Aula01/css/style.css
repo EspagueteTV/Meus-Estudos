@@ -1,0 +1,28 @@
+body{
+    background-color: #dddddd;
+    background: url(../images/fundo.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titulo{
+    font-size: 31px; /* Tamanho da fonte*/
+    color: #FF0005; /* Mudar cor da fonte*/
+    font-family: 'New Tegomin', serif;  /* Mudar família da fonte*/
+    font-weight: bold; /* fonte Negrito*/
+    font-style: italic; /* Fonte itálico -- normal -- oblique*/
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.texto{
+    background-color: #f0f8ff8a;
+    padding: 10px;
+    border-radius: 10px;
+    text-indent: 50px;
+    color: #121212;
+    line-height: 35px; /* Distância entre linhas*/
+    text-align: justify;    /* Alinhamento do texto */
+    
+}

@@ -1,0 +1,9 @@
+----- Bootstrap
+
+xs - phone
+sm - tablets
+md - laptops 
+lg - desktops, tv,
+
+container - borda direita e esquerda, centraliza página
+container-fluid : utiliza toda a tela

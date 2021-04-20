@@ -22,24 +22,25 @@ public class Cronometro extends Relogio{
     public void incrementar(){
         if(this.centesimo < 99){
             this.centesimo ++;
-        }else if(this.segundo < 59){
+        }else {
             this.centesimo = 0;
-            this.segundo += 1;
-        }else if(this.minuto < 59){
-            this.centesimo = 0;
-            this.segundo = 0;
-            this.minuto += 1;
-        }else if(this.hora < 23){
-            this.centesimo = 0;
-            this.segundo = 0;
-            this.minuto = 0;
-            this.hora += 1;
-        }else{
-            this.centesimo = 0;
-            this.segundo = 0;
-            this.minuto = 0;
-            this.hora = 0;
+            if(this.segundo < 59){
+                this.segundo += 1;
+            }else {
+                this.segundo = 0;
+                if(this.minuto < 59){
+                    this.minuto += 1;
+                }else{
+                    this.minuto = 0;
+                    if(this.hora < 23){
+                        this.hora += 1;
+                    }else{
+                        this.hora = 0;
+                    }
+                }
+            }
         }
+
         System.out.println(horarioAtual());
     }
 

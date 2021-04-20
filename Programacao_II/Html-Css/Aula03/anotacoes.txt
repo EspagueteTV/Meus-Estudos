@@ -1,0 +1,11 @@
+/* Relativo - relativo ao elemento anterior*/
+/* Absolute - relativo ao navegador */
+/* Fixed - fixo na tela*/
+/* z-index: controla o posicionamento dos conteúdos, aparece o item com maior valor para menor*/
+
+visibility - visibilidade
+    hidden: escondido
+
+
+Para um conteudo não aparecer e ocupar lugar, utilizar o comando
+    display: none;
