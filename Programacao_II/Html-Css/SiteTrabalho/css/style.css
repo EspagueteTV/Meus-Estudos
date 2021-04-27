@@ -1,13 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@200&display=swap');
+
+
 
 body {
     margin: 0px;
     padding: 0px;
+    background-color: #f0eeee;
 }
 
 .jumbotron{
     width: 100%;
-    height: 300px;
-    background: url(https://cdn.pixabay.com/photo/2017/06/26/17/31/city-2444516_960_720.jpg);
+    height: 400px;
+    background: url(https://s3-us-west-1.amazonaws.com/dkn-wp/wp-content/uploads/2018/11/13194022/Gotham.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -20,8 +25,10 @@ body {
     text-transform: uppercase;
     font-size: 50px;
     letter-spacing: 3px;
-    text-shadow: 3px 3px 7px #000;
+    margin-top: 60px;
+    text-shadow: 5px 5px 10px #000;
     transition: all 0.4s;
+    font-family: 'Coda Caption', sans-serif;
 }
 
 .jumbotron h1:hover{
@@ -35,35 +42,17 @@ body {
     color: #fff;
     text-shadow: 3px 5px 10px #000;
     font-size: 36px;
-    font-weight: bolder;
-    text-transform: uppercase;
+    text-transform: capitalize;
+    font-family: 'Coda Caption', sans-serif;
+    
 }
 
-.jumbotron-bottom a{
-    float: right;
-    margin-right: 30%;
-    background-color: #112596;
-    margin: 5px;
-    padding: 12px;
-    color: white;
-    font-size: 18px;
-    text-decoration: none;
-    border-radius: 10%;
-    box-shadow: 5px 5px 7px #000;
-    transition: all 0.4s;
-}
-
-.jumbotron-bottom a:hover{
-    background-color: #4babeb;
-    color: #000;
-    transform: rotate(5deg);
-}
 
 .socialSite{
     float: left;
     position: fixed;
     z-index: 3;
-    left: -23px
+    left: 10px
 }
 
 .socialSite a{
@@ -74,14 +63,14 @@ body {
     margin: 10px;
     text-align: center;
     color: white;
-    border-radius: 30%;
+    border-radius: 50%;
     box-shadow: 2px 2px 3px #000;
     transition: all 0.5s;
 }
 
 .socialSite a:hover{
     width: 100px;
-    border-radius: 0px 20% 20% 0px;
+    border-radius: 20%;
 }
 
 .bloco-info{
@@ -105,11 +94,13 @@ body {
 }
 
 .bloco-info .header h1{
-    font-size: 24px;
+    margin-top: 5px;
+    font-size: 34px;
     font-weight: bolder;
     margin-bottom: 15px;
     text-transform: uppercase;
     color: #272727;
+    font-family: 'Antonio', sans-serif;
 }
 
 .bloco-info .header h1:hover{
@@ -134,42 +125,56 @@ body {
     text-indent: 50px;
     margin-top: 15px;
     margin-bottom: 15px;
+    padding: 0px 3px;
 }
 
 .bloco-info .footer-bloco-info {
-    padding: 2px;
-    margin: 1px;
-    height: 50px;
+     height: 60px;
+    text-align: center;
 }
 
-.bloco-info .footer-bloco-info .btn{
-    float: right;
-    width: 40%;
-}
+
 
 .jumbotron-bottom{
     width: 100%;
-    height: 300px;
-    background: url(https://cdn.pixabay.com/photo/2017/06/26/17/31/city-2444516_960_720.jpg);
+    height: 350px;
+    background: url(https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/5/51/Avengers_Tower_AoU.png/revision/latest?cb=20151110182818);
     background-attachment: fixed;
     background-size: cover;
     border-radius: 0px;
 }
 
-.jumbotron-bottom h1{
+.jumbotron-bottom h4{
     text-align: right;
     padding: 20px;
     padding-top: 120px;
     color: white;
-    text-shadow: 5px 5px 7px #000;
+    text-shadow: 10px 10px 15px #000;
 }
 
 .jumbotron-bottom a{
     margin-right: 30px;
 }
 
+.jumbotron-bottom a{
+    float: right;
+    margin: 5px;
+    margin-right: 5%;
+    padding: 12px;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 15%;
+    box-shadow: 5px 5px 7px #000;
+    transition: all 0.4s;
+}
+
+.jumbotron-bottom a:hover{
+    transform: rotate(5deg);
+}
+
 .footer{
-    background-color:  #122441;
+    background: linear-gradient(#141926,#283040 );
     padding: 10px;
     color: white;
 }
@@ -186,13 +191,18 @@ body {
     font-size: 16px;
     margin: 10px;
     color: #ddd;
+    font-weight: bolder;
 }
 
 .footer small{
-    color: #6e6d6d;
+    color: #AEB5BF;
     font-size: 14px;
 }
 
+.footer .redesSociais{
+    display: flex;
+    justify-content: center;
+}
 
 
 .footer .redesSociais a{
@@ -214,6 +224,7 @@ footer{
     .jumbotron{
         position: relative;
         overflow: hidden;
+        height: 300px;
     }
 
     .jumbotron h1{
@@ -231,15 +242,20 @@ footer{
         padding: 6px;
     }
     
+    .jumbotron-bottom h4{
+        font-size: 20px;
+    }
+
     .socialSite{
         top: 40%;
+        left: -8px;
     }
 
     .socialSite a{
         position: static;
-        width: 45px;
-        height: 45px;
-        line-height: 45px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
         padding: 0px;
         left: -42px;
         padding-right: 2px;
@@ -250,14 +266,14 @@ footer{
     }
 
     .bloco-info{
-        margin-left: 25px;
-        width: 95%;
+        margin-left: 30px;
+        width: 90%;
         padding: 5px;
         border: 1px solid rgba(0, 0, 0, 0.479);
     }
     
     .jumbotron-bottom h1{
-        font-size: 30px;
+        font-size: 36px;
     }
     .jumbotron-bottom a{
         padding: 6px;
@@ -267,5 +283,8 @@ footer{
         text-align: right;
     }
 
+    .footer {
+        text-align: center;
+    }
 }
 
