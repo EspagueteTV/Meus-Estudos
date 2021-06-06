@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Aula JS</title>
+        <!-- CSS -->
+        <link href="css/estilo.css" rel="stylesheet"/>
+        <link href="css/menu.css" rel="stylesheet"/>
+        <link href="css/ex16.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <!-- SCRIPT -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="js/exercicio16.js" language="javascript"></script>
+    </head>
+    <body>
+
+        <input type="checkbox" id="btnDropper">
+    <label for="btnDropper">III</label>
+
+    <div class="nav">
+        <ul class="menu container">
+            <li class="logo disabled">Siqueira Websites</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Exercícios</a>
+                <ul class="submenu">
+                    <li><a href="exercicio01.html">Exercício 1</a></li>
+                        <li><a href="exercicio02.html">Exercício 2</a></li>
+                        <li><a href="exercicio03.html">Exercicio 3</a></li>
+                        <li><a href="exercicio04.html">Exercicio 4</a></li>
+                        <li><a href="exercicio05.html">Exercicio 5</a></li>
+                        <li><a href="exercicio06.html">Exercicio 6</a></li>
+                        <li><a href="exercicio07.html">Exercicio 7</a></li>
+                        <li><a href="exercicio08.html">Exercicio 8</a></li>
+                        <li><a href="exercicio09.html">Exercicio 9</a></li>
+                        <li><a href="exercicio10.html">Exercicio 10</a></li>
+                        <li><a href="exercicio11.html">Exercicio 11</a></li>
+                        <li><a href="exercicio12.html">Exercicio 12</a></li>
+                        <li><a href="exercicio13.html">Exercicio 13</a></li>
+                        <li><a href="exercicio14.html">Exercicio 14</a></li>
+                        <li><a href="exercicio15.html">Exercicio 15</a></li>
+                        <li><a href="exercicio16.html">Exercicio 16</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Sobre</a></li>
+        </ul>
+    </div>
+        <div class="container">
+            <div class="row">               
+                    <div class="block">
+                        <div class="header">
+                            <h1>Exercício 16</h1>
+                        </div>
+                        <div class="body">
+                            <div id="box"></div>
+                            <form name="form1">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <input type="button" value="1" onclick="adicionar('1');">
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <input type="button" value="2" onclick="adicionar('2');">
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <input type="button" value="3" onclick="adicionar('3');">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <input type="button" value="4" onclick="adicionar('4');">
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <input type="button" value="5" onclick="adicionar('5');">
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <input type="button" value="6" onclick="adicionar('6');">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <input type="button" value="7" onclick="adicionar('7');">
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <input type="button" value="8" onclick="adicionar('8');">
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <input type="button" value="9" onclick="adicionar('9');">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <input type="button" value="0" onclick="adicionar('0');">
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <input type="button" value="Limpar" onclick="limpar();">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <input type="button" value="+" onclick="adicionar('+');">
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <input type="button" value="-" onclick="adicionar('-');">
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <input type="button" value="/" onclick="adicionar('/');">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <input type="button" value="*" onclick="adicionar('*');">
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <input type="button" value="=" onclick="verificar();">
+                                    </div>
+                                </div>                
+                            </form>
+                            <div class="resp" id="box"></div>
+                        </div>
+                        <div class="footer">
+                            <a href="#" target="_blank">Voltar</a>
+                            <a href="#" target="_blank">Próximo</a>
+                        </div>
+                    </div>
+                </div>
+            
+        </div>	
+    </body>
+</html>
