@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        /*Ready - verificar se o documento foi totalmente escrito, já apareceu na tela, totalmente carregado*/
+        /*Construtor $ - indica que é uma função do Jquery*/
+
+        $(document).ready(function(){
+            /* Funcao quando clicar*/
+
+            var controle = 0;
+            
+            $("#acao").click(function(){
+                if(controle == 0){
+                    $("#menu").css("display","none");   /*Adicionar CSS*/
+                    controle = 1;
+                }else{
+                    $("#menu").css("display", "block");
+                    controle = 0;
+                }
+            });
+        });  
+
+        
+    </script>
+</head>
+<body>
+    <!--Jquery - biblioteca jS - codigo aberto - auxilia na codificação de codigos prontos - interage com HTMl,
+    utilizado para simplificar os Scripts - funcina em todos os navegadores - licença open free, ideia facilitar aos desenvolvedores aplicações js -->
+    <!-- Trabalha com um construtor, trabalha com um elemento HTML dentro da aplicação que utiliza Jquery. chamada construtor-->
+
+    <a id="acao" href="#" >Ocultar/Mostrar</a>
+        <div id="menu">
+            <ul>
+                <li>Link</li>
+                <li>Link 2</li>
+                <li>Link 4</li>
+                <li>Link 5</li>
+            </ul>
+        </div>
+
+</body>
+</html>
